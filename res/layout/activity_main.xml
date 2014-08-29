@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+    <RelativeLayout 
+        android:id="@+id/main_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/head_bg">
+        <ImageView 
+            android:id="@+id/main_logo"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/icon"/>
+        <TextView 
+            android:id="@+id/main_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:textSize="20sp"
+            android:layout_toRightOf="@id/main_logo"
+            android:singleLine="true"
+            android:textColor="#ffffff"
+            android:text="AiMei"/>
+        <LinearLayout 
+            android:id="@+id/right_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true">
+            <Button 
+                android:id="@+id/actionbar_right_button"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_margin="15dp"
+                android:text="@null"
+                android:textColor="#ffffff"
+                android:background="@drawable/icon_search"/>
+        </LinearLayout>
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:id="@+id/main_tab"
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:layout_below="@id/main_actionbar"
+        android:background="#ffffff" >
+
+       <Button
+            android:id="@+id/main_tab_btn1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawableTop="@drawable/tab_btn1"
+            android:onClick="onTabSelect"
+            android:layout_marginTop="4dp"
+            android:scaleType="matrix"
+            android:text="@null"
+            android:textSize="12sp" />
+       <Button
+            android:id="@+id/main_tab_btn2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawableTop="@drawable/tab_btn2"
+            android:onClick="onTabSelect"
+            android:layout_marginTop="4dp"
+            android:scaleType="matrix"
+            android:text="@null"
+            android:textSize="12sp" />
+       <Button
+            android:id="@+id/main_tab_btn3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawableTop="@drawable/tab_btn3"
+            android:onClick="onTabSelect"
+            android:layout_marginTop="4dp"
+            android:scaleType="matrix"
+            android:text="@null"
+            android:textSize="12sp" />
+       <Button
+            android:id="@+id/main_tab_btn4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:drawableTop="@drawable/tab_btn4"
+            android:onClick="onTabSelect"
+            android:layout_marginTop="4dp"
+            android:scaleType="matrix"
+            android:text="@null"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/cursor"
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:layout_below="@id/main_tab"
+        android:scaleType="matrix"
+        android:src="@drawable/viewpager_line" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/mViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/cursor"
+        android:layout_gravity="center"
+        android:layout_weight="1.0"
+        android:background="#d4d4d4"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation" />
+
+</RelativeLayout>

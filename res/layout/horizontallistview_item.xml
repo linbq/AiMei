@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="155dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+<RelativeLayout 
+    android:layout_width="150dp"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="5dp"
+    android:background="#b9ffffff" >
+    
+    <ImageView 
+        android:id="@+id/fragment1_listview_item_head"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/fragment1_listview_item"/>
+    
+    <TextView 
+        android:id="@+id/fragment1_listview_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@id/fragment1_listview_item_head"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:text="Wynne"/>
+    
+    <TextView 
+        android:id="@+id/fragment1_listview_item_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@id/fragment1_listview_item_title"
+        android:textColor="#000000"
+        android:textSize="13sp"
+        android:text="adsadsadsads"/>
+    
+    <TextView 
+        android:id="@+id/fragment1_listview_item_forrenqi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@id/fragment1_listview_item_desc"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:text="人气："/>
+    
+    <TextView 
+        android:id="@+id/fragment1_listview_item_renqi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@id/fragment1_listview_item_desc"
+        android:layout_toRightOf="@id/fragment1_listview_item_forrenqi"
+        android:textColor="#ff0000"
+        android:textSize="16sp"
+        android:text="1,888"/>
+    
+    <TextView 
+        android:id="@+id/fragment1_listview_item_goodat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@id/fragment1_listview_item_forrenqi"
+        android:textColor="#000000"
+        android:textSize="17sp"
+        android:text="He is good at"/>
+    
+
+</RelativeLayout>
+<LinearLayout 
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:background="#b9ffffff">
+        <ImageView 
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/u0001"/>
+        <ImageView 
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:scaleType="fitXY"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/u0002"/>
+        <ImageView 
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+        	android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/u0003"/>
+    </LinearLayout>
+</LinearLayout>

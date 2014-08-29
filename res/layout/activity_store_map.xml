@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/store_map_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <com.baidu.mapapi.map.MapView  
+    android:id="@+id/bmapView"  
+    android:layout_width="fill_parent"  
+    android:layout_height="fill_parent"  
+    android:clickable="true" />
+    
+    
+    <RelativeLayout 
+        android:id="@+id/bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#80000000">
+        <ImageButton
+            android:id="@+id/bar_back"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:padding="10dp"
+            android:background="@drawable/bar_back_selector"
+            android:src="@drawable/icon_bar_back"/>
+        <TextView 
+            android:id="@+id/bar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:textSize="20sp"
+            android:layout_toRightOf="@id/bar_back"
+            android:layout_centerInParent="true"
+            android:singleLine="true"
+            android:textColor="#ffffff"
+            android:text="地图"/>
+        <LinearLayout 
+            android:id="@+id/right_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true">
+            <Button 
+                android:id="@+id/bar_search_btn"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_margin="15dp"
+                android:text="@null"
+                android:textColor="#ffffff"
+                android:background="@drawable/icon_search"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>

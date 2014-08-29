@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/icon_pop_bg" >
+
+        <ImageView
+            android:id="@+id/popup_store_map_headimg"
+            android:layout_width="80dp"
+            android:layout_height="95dp"
+            android:layout_marginRight="5dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/popup_store_map_head" />
+
+        <ImageView
+            android:id="@+id/popup_store_map_close"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/pop_close_btn" />
+
+        <TextView
+            android:id="@+id/popup_store_map_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/popup_store_map_headimg"
+            android:singleLine="true"
+            android:text="Wynne"
+            android:textColor="#e0ffffff"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/popup_store_map_addr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/popup_store_map_name"
+            android:layout_toRightOf="@id/popup_store_map_headimg"
+            android:singleLine="true"
+            android:text="南山区朗山路中同方信息港C栋"
+            android:textColor="#e0ffffff"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/popup_store_map_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/popup_store_map_addr"
+            android:layout_toRightOf="@id/popup_store_map_headimg"
+            android:singleLine="true"
+            android:text="12345678901"
+            android:textColor="#e0ffffff"
+            android:textSize="14sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_below="@id/popup_store_map_phone"
+            android:layout_toRightOf="@id/popup_store_map_headimg"
+            android:background="@drawable/pop_btn_bg"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="马上预约"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+        
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/popup_store_map_headimg"
+            android:paddingBottom="5dp"
+            android:background="#88000000">
+            
+            <TextView
+	            android:id="@+id/popup_store_map_desc"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:singleLine="true"
+	            android:layout_margin="10dp"
+	            android:text="sadadswfdasasdfa"
+	            android:textColor="#e0ffffff"
+	            android:textSize="16sp" />
+            
+            <TextView
+	            android:id="@+id/popup_store_map_renqi"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:singleLine="true"
+	            android:layout_marginRight="10dp"
+	            android:layout_marginTop="8dp"
+	            android:layout_alignParentRight="true"
+	            android:text="1,888"
+	            android:textColor="#ff5a44"
+	            android:textSize="22sp" />
+            
+            <Button 
+                android:id="@+id/popup_store_map_see"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@id/popup_store_map_desc"
+                android:textColor="#ffffff"
+                android:textSize="13sp"
+                android:background="@drawable/pop_store_map_btn_bg"
+                android:text="看技师"/>
+            
+            <TextView
+	            android:id="@+id/popup_store_map_renqi2"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:singleLine="true"
+	            android:layout_marginTop="5dp"
+	            android:layout_marginRight="10dp"
+	            android:layout_below="@id/popup_store_map_renqi"
+	            android:layout_alignParentRight="true"
+	            android:text="人气"
+	            android:textColor="#e0ffffff"
+	            android:textSize="15sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

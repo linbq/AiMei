@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d4d4d4"
+    android:orientation="vertical" >
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="2dp"
+        android:orientation="horizontal">
+        <ImageView 
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:src="@drawable/fragment1_listview_item"/>
+        <ImageView 
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:src="@drawable/fragment1_listview_item"/>
+        <ImageView 
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            android:scaleType="fitXY"
+            android:src="@drawable/fragment1_listview_item"/>
+    </LinearLayout>
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff">
+        <TextView 
+            android:id="@+id/store_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_marginLeft="10dp"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            android:textColor="#000000"
+            android:text="XXXX店"/>
+        
+        <TextView 
+            android:id="@+id/store_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            android:textColor="#666666"
+            android:text="100米"/>
+    </RelativeLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:paddingBottom="3dp"
+        android:orientation="vertical">
+    
+     <TextView 
+            android:id="@+id/store_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_marginLeft="10dp"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            android:textColor="#666666"
+            android:text="12345678901"/>
+     
+     <TextView 
+            android:id="@+id/store_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_marginLeft="10dp"
+            android:textSize="15sp"
+            android:textStyle="normal"
+            android:textColor="#00dce8"
+            android:text="@string/main_store_address"/>
+     
+     <Button 
+         android:id="@+id/store_see_person"
+         android:layout_width="wrap_content"
+         android:layout_height="27dp"
+         android:layout_marginTop="2dp"
+         android:layout_marginBottom="2dp"
+         android:layout_marginLeft="10dp"
+         android:background="@drawable/see_person_btn_bg"
+         android:text="看技师"
+         android:textSize="14sp"
+         android:textStyle="normal"
+         android:textColor="#ff0000"/>
+     </LinearLayout>
+     
+     <RelativeLayout 
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:background="#e5e5e5"
+         android:paddingTop="2dp"
+         android:paddingBottom="2dp">
+         <TextView 
+            android:id="@+id/store_desc"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:text="jfdksampmdpmpoajfodmpujytrqpomvcdnvfim"/>
+         
+         <TextView 
+            android:id="@+id/store_popularity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:textSize="22sp"
+            android:textColor="#ff5a44"
+            android:text="1,888"/>
+         
+         <TextView 
+            android:id="@+id/store_for_popularity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/store_popularity"
+            android:textSize="12sp"
+            android:textColor="#666666"
+            android:text="人数"/>
+     </RelativeLayout>
+
+</LinearLayout>
